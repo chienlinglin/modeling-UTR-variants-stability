@@ -1,5 +1,7 @@
 ## Figure 1A 
 ##  SNP / disease variant locate in mRNA 
+##  Due to file size, only upload summerized file (SNP151, ClinNew)
+
 
 # library
 library(ggsci)
