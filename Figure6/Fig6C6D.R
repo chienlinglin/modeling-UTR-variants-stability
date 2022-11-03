@@ -11,7 +11,12 @@ library(ggrepel)
 library(ggpubr)
 
 # prepare data for meta-analysis
-load("/work/Bioinformatic_Project/07.RNA_Stability/14.GO_seperate/20220829_UA(only)slidingNorm.rds")  
+dblink <- new.env()
+dblink$GOdb <- dbConnect(SQLite(), "GOdb.db")
+dblink$GOGCsliding <- dbConnect(SQLite(), "GOUA(pure)SlidingTest.db")
+dblink$GOGCtest <- dbConnect(SQLite(), "GOUA(pure)test.db")
+
+load("20220829_UA(only)slidingNorm.rds")  
 
 allTSsliding <- 
   list(
