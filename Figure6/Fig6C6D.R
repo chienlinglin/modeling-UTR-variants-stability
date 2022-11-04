@@ -1,6 +1,6 @@
 ## Fig 6C & 6D
 ##  several example for meta-analysis UA-dimer content 
-##  upload plot6C_DF, plot6D_DF for each selected GO
+##  upload plot6C_DF, plot6D_DF, combined dataframe for all GO
 
 # library
 library(DBI)
