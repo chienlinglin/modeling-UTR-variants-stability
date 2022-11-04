@@ -1,6 +1,6 @@
 ## Figure 2G
 ##  LASSO estimate unique ARE pattern effect
-##  upload AREtbl
+##  upload AREtbl_U5, AREtbl_U3
 
 # library
 library(DBI)
@@ -147,7 +147,6 @@ AREplotTbl$U5 <-
 
 AREplotTbl$U5 <- AREplotTbl$U5[order(AREplotTbl$U5$beta),]
 AREplotTbl$U5$ptrn <- factor(AREplotTbl$U5$ptrn, levels = AREplotTbl$U5$ptrn)
-
                                                                                         
 AREtbl <-                                                                                      
   sapply(AREplotTbl, simplify = FALSE, FUN = function(utrTbl){
