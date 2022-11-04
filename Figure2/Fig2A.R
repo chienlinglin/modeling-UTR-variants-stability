@@ -1,5 +1,6 @@
 ## Figure 2A 
 ##  UTR library half-life w./wo ARE motif in SH-SY5Y cell line
+##  upload AREwwo_U5, AREwwo_U3
 
 # library
 library(DBI)
