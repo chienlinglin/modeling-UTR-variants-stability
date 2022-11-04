@@ -1,6 +1,6 @@
 ## Fig4A (5'UTR) & Fig4C (3'UTR)
 ##  TA content correlate with half-life, SH-SY5Y, Both 5/3'UTR
-##  upload SHdiNT
+##  upload SHdiNT_U5, SHdiNT_U3
 
 
 #  library
