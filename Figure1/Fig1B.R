@@ -1,6 +1,6 @@
 ## Fig1B 
 ##  SNP and disease variant located in uORF
-##  Only upload Freqtbl file
+##  upload Freqtbl (large csv file)
 
 # library
 library(ggplot2)
