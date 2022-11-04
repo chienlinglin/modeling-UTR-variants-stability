@@ -62,6 +62,8 @@ HEKgroup <-
             T05_wt = NULL)
 
 HEKgroup$colq <- factor(ifelse(HEKgroup$qvalue>0.2, NA, ifelse(HEKgroup$quotHL>0.5&HEKgroup$quotHL<2, NA, ifelse(grepl("^3[MP]", HEKgroup$WT), "3'UTR", "5'UTR"))), levels = c("5'UTR", "3'UTR"))
+HEKgroup$WT <- NULL    # too big, too long, not essential
+HEKgroup$mt <- NULL
 
 HEKqTbl <- split(HEKgroup, is.na(HEKgroup$colq))
 
