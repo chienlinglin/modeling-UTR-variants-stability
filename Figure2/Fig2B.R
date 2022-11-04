@@ -162,7 +162,7 @@ AREtbl <-
 AREplot <- list(U5 = 
                   ggplot(AREtbl$U5)+
                   geom_col(aes(y = beta, x = as.numeric(ptrn)+0.1, fill = effect), show.legend = FALSE, width = 0.4)+
-                  geom_text(aes(y = 0, x = as.numeric(ptrn)-0.4, label = as.character(ptrn)), size = 4.2, family = "Helvetica")+
+                  geom_text(aes(y = 0, x = as.numeric(ptrn)-0.4, label = as.character(ptrn)), size = 4.2)+
                   scale_y_continuous(limits = c(-0.3,0.3), breaks = c(-0.2,-0.1,0.1,0.2))+
                   scale_x_continuous(breaks = NULL)+
                   scale_fill_d3()+
@@ -173,7 +173,7 @@ AREplot <- list(U5 =
                 U3 = 
                   ggplot(AREtbl$U3)+
                   geom_col(aes(y = beta, x = as.numeric(ptrn)+0.1, fill = effect), show.legend = FALSE, width = 0.4)+
-                  geom_text(aes(y = 0, x = as.numeric(ptrn)-0.4, label = as.character(ptrn)), size = 4.2, family = "Helvetica")+
+                  geom_text(aes(y = 0, x = as.numeric(ptrn)-0.4, label = as.character(ptrn)), size = 4.2)+
                   scale_y_continuous(limits = c(-0.3,0.3), breaks = c(-0.2,-0.1,0.1,0.2))+
                   scale_x_continuous(breaks = NULL)+   
                   scale_fill_d3()+
