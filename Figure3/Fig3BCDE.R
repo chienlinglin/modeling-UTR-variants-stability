@@ -2,8 +2,11 @@ require(rio)
 require(ggplot2)
 require(wesanderson)
 require(ggpubr)
+require(grid)
+require(SUmisc)
 require(tidyverse)
-require(EndoMineR)
+
+
 
 df_sig_coef_plot <- import_list(file.path(getwd(), "fig_data_code", "fig_3BCDE.xlsx"))
 
@@ -26,7 +29,7 @@ p_top_coef <-
       scale_color_manual(values= c(wes_palette("GrandBudapest1", n = 4)[2],
                                    wes_palette("Zissou1", n = 5)[2])) +
       geom_vline(xintercept = 0, linetype="dashed") +
-      theme_Publication() +
+      SUmisc:::theme_Publication() +
       rremove("legend") +
       rremove("xlab") +
       rremove("ylab") +
