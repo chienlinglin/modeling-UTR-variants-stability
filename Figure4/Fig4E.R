@@ -1,7 +1,10 @@
 require(readxl)
 require(ComplexUpset)
 require(ggplot2)
+require(scales)
+require(nord)
 require(tidyverse)
+
 
 sig_grps <- read_xlsx(file.path(getwd(), "fig_data_code", "fig_4E.xlsx"))
 
@@ -22,16 +25,16 @@ upset(data = sig_grps %>% as.data.frame(),
           aes=aes(x=intersection, fill = Type),
           geom=list(
             geom_bar(stat='count', position='fill'), 
-            scale_fill_manual(values = nord::nord("aurora")[1:4] %>% 
+            scale_fill_manual(values = nord("aurora")[1:4] %>% 
                                 set_names(sig_grps$Type %>% unique),
                               name = ""),
-            scale_y_continuous(labels=scales::percent_format())
+            scale_y_continuous(labels=percent_format())
           ) 
         ),
         'Size of the intersected\nfeatures (ungrouped)'=intersection_size(
           counts=FALSE,
           mapping=aes(fill=grp_TA)
-        ) + scale_fill_manual(values = c('TA-correlated features' = nord::nord("lumina")[4],
+        ) + scale_fill_manual(values = c('TA-correlated features' = nord("lumina")[4],
                                          'Others' = "#2E3440"),
                               name = "")
       ))
