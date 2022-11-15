@@ -1,4 +1,4 @@
-require(EndoMineR)
+require(SUmisc)
 require(readxl)
 require(ggplot2)
 
@@ -17,7 +17,7 @@ trend_plot_utr3 <-
   ylab("Log(Normalized Counts)") +
   facet_wrap(~Name) + 
   ggtitle("3' UTR") + 
-  theme_Publication() +
+  SUmisc:::theme_Publication() +
   xlab("minutes post-transfection") +
   scale_color_manual(values = c("black", "#990000"), labels = c("Wild-type", "Mutant")) +
   ylab("Log(Normalized Counts)") 
@@ -34,7 +34,7 @@ trend_plot_utr5 <-
                      labels = seq(0, 90, 45)) +
   facet_wrap(~Name) + 
   ggtitle("5' UTR") + 
-  theme_Publication() +
+  SUmisc:::theme_Publication() +
   xlab("minutes post-transfection") +
   scale_color_manual(values = c("black", "#990000"), labels = c("Wild-type", "Mutant")) +
   ylab("Log(Normalized Counts)") 
