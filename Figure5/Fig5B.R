@@ -2,6 +2,7 @@ require(readxl)
 require(wesanderson)
 require(ggpubr)
 require(EnvStats)
+require(SUmisc)
 require(tidyverse)
 
 
