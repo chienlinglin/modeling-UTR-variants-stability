@@ -2,8 +2,8 @@ require(SUmisc)
 require(readxl)
 require(ggplot2)
 
-df_plot_utr5 <- read_xlsx(file.path(getwd(), "fig_data_code", "fig_1E.xlsx"), sheet = "UTR5")
-df_plot_utr3 <- read_xlsx(file.path(getwd(), "fig_data_code", "fig_1E.xlsx"), sheet = "UTR3")
+df_plot_utr5 <- read_xlsx(file.path(getwd(), "fig_data_code", "fig_1C.xlsx"), sheet = "UTR5")
+df_plot_utr3 <- read_xlsx(file.path(getwd(), "fig_data_code", "fig_1C.xlsx"), sheet = "UTR3")
 
 
 trend_plot_utr3 <- 
